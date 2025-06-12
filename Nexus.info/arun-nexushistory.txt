@@ -3,6 +3,7 @@
     2  cd /opt/
     3  ls
     4  sudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gzsudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+(latest nexus version:  sudo wget https://download.sonatype.com/nexus/3/nexus-3.81.0-08-linux-x86_64.tar.gz)
     5  ls
     6  tar -xvf latest-unix.tar.gz
     7  ls
