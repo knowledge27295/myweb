@@ -17,6 +17,7 @@
    15  cd bin
    16  ls
    17  vi nexus.rc
+in the nexus.rc mention run_as_user="nexus"
    18  ln -s /opt/nexus3/bin/nexus /etc/init.d/nexus  (symbolic link /soft link create and Creating this link allows Nexus to be started/stopped automatically during boot/shutdown)
    19  cd /etc/init.d/
    20  chkconfig --add nexus
