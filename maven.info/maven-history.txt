@@ -1,5 +1,6 @@
 [root@ip-172-31-34-233 target]# history
     1  yum install -y java-1.8.0-openjdk-devel.x86_64
+latest (amazon linux 2023) : sudo dnf install -y java-1.8.0-openjdk-devel
 (jenkins) -   sudo amazon-linux-extras install java-openjdk11 -y
 
 
@@ -46,6 +47,7 @@ Java home: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.265.b01-1.amzn2.0.1.x86_64/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "4.14.203-156.332.amzn2.x86_64", arch: "amd64", family: "unix"
 [root@ip-172-31-34-233 target]#
+
 
 
 
