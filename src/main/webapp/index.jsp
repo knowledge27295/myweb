@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bapatla durga-v1.0</title>
+    <title>Bapatla shekar-v1.0</title>
     <style>
         /* Apply a linear gradient background */
         body {
@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <h1>Bapatla durga-v1.0</h1>
+    <h1>Bapatla shekar-v1.0</h1>
 </body>
 </html>
 
