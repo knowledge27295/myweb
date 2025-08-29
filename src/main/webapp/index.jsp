@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <h1>Bapatla shekar-v1.0</h1>
+    <h1>Chintu (Model)-v1.0</h1>
 </body>
 </html>
 
