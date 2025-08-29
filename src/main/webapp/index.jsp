@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bapatla shekar-v1.0</title>
+    <title>Chintu (Model)-v1.0</title>
     <style>
         /* Apply a linear gradient background */
         body {
