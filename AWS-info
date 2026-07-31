@@ -1,0 +1,44 @@
+Virtualization means
+
+One powerful Physical server will be divided into multiple VM's  (eg: VM1 and VM2 and VM3) 
+
+example VM ware or Virtual box we can install multiple OS and it will work isolated and if one server having issue or crash it will
+not impact for the another server or VM
+
+example we have 3 services 
+
+1. Payroll -first VM
+2. HR    -- Second VM
+3. Web Portal --3rd VM 
+
+if virtualization not there we need to buy a separate physical servers for each 3 as a result  cost also increasing if ur using 20 to 30% usage 
+and the storage , RAM and CPU also will be wasted in physical servers point of view (on-premises) 
+
+1. Payroll -first physical server
+2. HR    -- Second physical server
+3. Web Portal --3rd physical server
+
+example : 1 physical server is 5 Laksh and for 3 physical servers cost will be 15 lakshs 
+
+but if we are using these 3 VM's on single physical server or machine cost will be reduced  and no need separate physical servers 
+
+example in the cloud also we using virtualizations 
+
+Hypervisor : it is placed B/W the Physical server and VM
+and it is act as manager
+It responsible for creating VM's and allocating Hardware resources to VM
+It allocating how much CPU, RAM and STORAGE gives to VM
+
+example: Xen and Microsoft Hyper-V
+
+CPU --16 CORE
+
+RAM --64 GB
+
+STORAGE --1TB SSD 100GB
+
+we have a 3 VM's Hypervisor will allocate 
+
+1st VM---CPU+RAM+STORAGE     = 4CPU+16GB+200GB
+2nd VM ---CPU+RAM+STORAGE      = 4CPU+16GB+300GB
+3rd VM ---CPU+RAM+STORAGE      = 8CPU+32GB+500GB
