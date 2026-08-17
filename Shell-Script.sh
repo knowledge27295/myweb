@@ -58,8 +58,8 @@ pipe : one command of output will take as an input for another to get the data
 
 echo  'saikumar-ramadasu-software-engineer'
 
-echo  'saikumar-ramadasu-software-engineer' | cut -d '_' -f1
-echo  'saikumar-ramadasu-software-engineer' | cut -d '_' -f1,4 | grep -i "www" 
+echo  'saikumar-ramadasu-software-engineer' | cut -d '-' -f1
+echo  'saikumar-ramadasu-software-engineer' | cut -d '-' -f1,4 | grep -i "www" 
   
 ***We placed the credentials at both the places like "env and .aws/credentials so which comes first and second?
 check for aws cli precedence ---CMD is first and "env" is latest
