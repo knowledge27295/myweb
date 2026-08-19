@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "Staring EC2"
           aws ec2 start-instances \
-            --instance-ids i-0fabe39ff3e632633 \
+            --instance-ids i-006a053237f9c154d \
             --region ap-southeast-1
           echo "Instance started"  
           
@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Stopping EC2 instance"
           aws ec2 stop-instances \
-            --instance-ids i-0fabe39ff3e632633 \
+            --instance-ids i-006a053237f9c154d \
             --region ap-southeast-1
           echo "Instance stopped"  
 
@@ -49,7 +49,7 @@ jobs:
         run: |
           echo "Terminating the EC2 instance"
           aws ec2 terminate-instances \
-            --instance-ids i-0fabe39ff3e632633 \
+            --instance-ids i-006a053237f9c154d \
             --region ap-southeast-1
           echo "Instance terminated"  
           
