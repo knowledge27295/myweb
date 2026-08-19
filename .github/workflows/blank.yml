@@ -1,0 +1,36 @@
+# This is a workflow to manage the EC2 instance state
+
+name: Start, Stop and Terminate EC2 instance
+on:
+  workflow_dispatch:
+   inputs:
+     action:
+       description: "Select action"
+       required: true
+       type: choice
+       options:
+         - start
+         - stop
+         - terminate     
+jobs:
+  Ec2-Control:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          aws-region: ap-southeast-1
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Star EC2 instance
+        if: ${{ inputs.action == 'start' }}
+        run: |
+          echo "Staring Ec2"
+          aws ec2 start-instances \
+            --instance-ids i-0fabe39ff3e632633 \
+            --region ap-southeast-1
+          echo "Instance started"  
+
+      
