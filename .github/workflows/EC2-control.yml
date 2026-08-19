@@ -24,34 +24,32 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - name: Star EC2 instance
+      - name: Start EC2 instance
         if: ${{ inputs.action == 'start' }}
         run: |
-          echo "Staring Ec2"
+          echo "Staring EC2"
           aws ec2 start-instances \
             --instance-ids i-0fabe39ff3e632633 \
             --region ap-southeast-1
           echo "Instance started"  
+          
 
       - name: Stop EC2 instance
         if: ${{ inputs.action == 'stop' }}
         run: |
-          echo "Stopping Ec2 instance"
+          echo "Stopping EC2 instance"
           aws ec2 stop-instances \
             --instance-ids i-0fabe39ff3e632633 \
             --region ap-southeast-1
           echo "Instance stopped"  
-          
-            
-      
 
           
-
-
-
-
-
-
-
-
-      
+      - name: Terminate EC2 instance
+        if: ${{ inputs.action == 'terminate' }}
+        run: |
+          echo "Terminating the EC2 instance"
+          aws ec2 terminate-instances \
+            --instance-ids i-0fabe39ff3e632633 \
+            --region ap-southeast-1
+          echo "Instance terminated"  
+          
