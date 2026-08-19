@@ -1,4 +1,4 @@
-# This is a workflow to manage the EC2 instance state
+# This is a workflow to manage the EC2 instance status
 
 name: Start, Stop and Terminate EC2 instance
 on:
@@ -32,5 +32,26 @@ jobs:
             --instance-ids i-0fabe39ff3e632633 \
             --region ap-southeast-1
           echo "Instance started"  
+
+      - name: Stop EC2 instance
+        if: ${{ inputs.action == 'stop' }}
+        run: |
+          echo "Stopping Ec2 instance"
+          aws ec2 stop-instances \
+            --instance-ids i-0fabe39ff3e632633 \
+            --region ap-southeast-1
+          echo "Instance stopped"  
+          
+            
+      
+
+          
+
+
+
+
+
+
+
 
       
